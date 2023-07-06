@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "JScrape",
+  "version": "1.0",
+  "description": "Fetch every <script> tags in a page",
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/border-48.png",
+      "38": "icons/border-48.png"
+    },
+    "default_title": "JScrape",
+    "default_popup": "html/index.html"
+  },
+  
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/jscrape.js"
+      ]
+    }
+  ]
+}

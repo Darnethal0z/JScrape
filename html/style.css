@@ -1,0 +1,33 @@
+body {
+	background-color: #0d1117;
+	color: white;
+}
+
+main {
+	width: 400px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI","Noto Sans", Helvetica,Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+main h1 {
+	font-size: 15px;
+	border-bottom: 1px solid #fff;
+}
+
+main ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+main ul li {
+	margin-bottom: 10px;
+	padding: 5px;
+	border: 1px solid #3c3c3c;
+	border-radius: 8px;
+	background-color: #24292f;
+	/*rest of the styles are programmatically set in display.js*/
+}
+
+main ul li:hover {
+	background-color: #434c56;
+	cursor: pointer;
+}
